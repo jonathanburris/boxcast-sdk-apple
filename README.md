@@ -60,3 +60,7 @@ There is a demo app included with this project to help you get a feel for how th
 > Carthage must be installed on your machine or the project won't build.
 
 ## Documentation
+
+## License
+
+BoxCast SDK is released under the MIT license. [See LICENSE](https://github.com/boxcast/boxcast-sdk-apple/blob/master/LICENSE) for details.
