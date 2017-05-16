@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
   s.authors = { 'Camden Fullmer' => 'camden.fullmer@boxcast.com' }
 
   s.source = { :git => 'https://github.com/boxcast/boxcast-sdk-apple.git', :tag => s.version }
-  s.source_files = 'Source/*.swift'
+  s.source_files = 'Source/**/*.swift'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target  = '9.0'
 
-  s.dependency 'Alamofire', '~> 4.1'
+  s.dependency 'Alamofire', '4.4.0'
 end
