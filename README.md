@@ -1,5 +1,7 @@
 # BoxCast SDK for Apple Platforms
 
+![Travis Status Image](https://travis-ci.org/boxcast/boxcast-sdk-apple.svg?branch=master)
+
 The official BoxCast SDK for integrating with the BoxCast API on Apple platforms.
 
 ## Features
