@@ -9,15 +9,27 @@
 /* Begin PBXBuildFile section */
 		411FC1AA1ECB86880034C4F3 /* InfoPlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FC1A81ECB856B0034C4F3 /* InfoPlistTests.swift */; };
 		411FC1AC1ECB87CB0034C4F3 /* QueryBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FC1AB1ECB87CB0034C4F3 /* QueryBuilderTests.swift */; };
-		411FC1AF1ECB8AF90034C4F3 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FC1AD1ECB8ABD0034C4F3 /* UIKitExtensions.swift */; };
+		411FC1AF1ECB8AF90034C4F3 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FC1AD1ECB8ABD0034C4F3 /* Device.swift */; };
+		419957DA1ECBEC2D0042FEA6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419957D91ECBEC2D0042FEA6 /* Alamofire.framework */; };
+		419957DC1ECBEC3C0042FEA6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419957DB1ECBEC3C0042FEA6 /* Alamofire.framework */; };
+		41EB19661ECBEA0D00C5C72E /* BoxCast.h in Headers */ = {isa = PBXBuildFile; fileRef = 41FB6D251EC771DA00C9EC8C /* BoxCast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41EB19671ECBEA2400C5C72E /* BoxCastClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D291EC7720300C9EC8C /* BoxCastClient.swift */; };
+		41EB19681ECBEA2400C5C72E /* BoxCastPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D631EC8BF9000C9EC8C /* BoxCastPlayer.swift */; };
+		41EB19691ECBEA2400C5C72E /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D351EC78AD300C9EC8C /* Errors.swift */; };
+		41EB196A1ECBEA2400C5C72E /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D651EC8C5D800C9EC8C /* Metrics.swift */; };
+		41EB196B1ECBEA2400C5C72E /* InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D671EC8CD5900C9EC8C /* InfoPlist.swift */; };
+		41EB196C1ECBEA2400C5C72E /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D2F1EC77DD700C9EC8C /* QueryBuilder.swift */; };
+		41EB196D1ECBEA2400C5C72E /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D741ECA482C00C9EC8C /* System.swift */; };
+		41EB196E1ECBEA2400C5C72E /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411FC1AD1ECB8ABD0034C4F3 /* Device.swift */; };
+		41EB196F1ECBEA2400C5C72E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D6F1EC9EF5900C9EC8C /* UserDefaults.swift */; };
+		41EB19701ECBEA2400C5C72E /* Broadcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D2C1EC775B800C9EC8C /* Broadcast.swift */; };
+		41EB19711ECBEA2400C5C72E /* BroadcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D311EC7812800C9EC8C /* BroadcastView.swift */; };
 		41FB6D061EC76C8500C9EC8C /* BoxCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FB6CFC1EC76C8500C9EC8C /* BoxCast.framework */; };
-		41FB6D231EC76FFA00C9EC8C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FB6D221EC76FFA00C9EC8C /* Alamofire.framework */; };
 		41FB6D271EC771DA00C9EC8C /* BoxCast.h in Headers */ = {isa = PBXBuildFile; fileRef = 41FB6D251EC771DA00C9EC8C /* BoxCast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41FB6D2A1EC7720300C9EC8C /* BoxCastClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D291EC7720300C9EC8C /* BoxCastClient.swift */; };
 		41FB6D2D1EC775B800C9EC8C /* Broadcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D2C1EC775B800C9EC8C /* Broadcast.swift */; };
 		41FB6D301EC77DD700C9EC8C /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D2F1EC77DD700C9EC8C /* QueryBuilder.swift */; };
 		41FB6D321EC7812800C9EC8C /* BroadcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D311EC7812800C9EC8C /* BroadcastView.swift */; };
-		41FB6D331EC7848800C9EC8C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41FB6D221EC76FFA00C9EC8C /* Alamofire.framework */; };
 		41FB6D361EC78AD300C9EC8C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D351EC78AD300C9EC8C /* Errors.swift */; };
 		41FB6D3E1EC78D9100C9EC8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D3D1EC78D9100C9EC8C /* AppDelegate.swift */; };
 		41FB6D401EC78D9100C9EC8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB6D3F1EC78D9100C9EC8C /* ViewController.swift */; };
@@ -64,10 +76,12 @@
 /* Begin PBXFileReference section */
 		411FC1A81ECB856B0034C4F3 /* InfoPlistTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlistTests.swift; sourceTree = "<group>"; };
 		411FC1AB1ECB87CB0034C4F3 /* QueryBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryBuilderTests.swift; sourceTree = "<group>"; };
-		411FC1AD1ECB8ABD0034C4F3 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		411FC1AD1ECB8ABD0034C4F3 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		419957D91ECBEC2D0042FEA6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		419957DB1ECBEC3C0042FEA6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		41EB195E1ECBE9AC00C5C72E /* BoxCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoxCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FB6CFC1EC76C8500C9EC8C /* BoxCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoxCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41FB6D051EC76C8500C9EC8C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41FB6D221EC76FFA00C9EC8C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		41FB6D051EC76C8500C9EC8C /* BoxCast Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BoxCast Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FB6D251EC771DA00C9EC8C /* BoxCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxCast.h; sourceTree = "<group>"; };
 		41FB6D261EC771DA00C9EC8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41FB6D291EC7720300C9EC8C /* BoxCastClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxCastClient.swift; sourceTree = "<group>"; };
@@ -95,11 +109,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		41EB195A1ECBE9AC00C5C72E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419957DC1ECBEC3C0042FEA6 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FB6CF81EC76C8500C9EC8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41FB6D231EC76FFA00C9EC8C /* Alamofire.framework in Frameworks */,
+				419957DA1ECBEC2D0042FEA6 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +130,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				41FB6D061EC76C8500C9EC8C /* BoxCast.framework in Frameworks */,
-				41FB6D331EC7848800C9EC8C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,14 +144,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		419957D81ECBEC2D0042FEA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				419957DB1ECBEC3C0042FEA6 /* Alamofire.framework */,
+				419957D91ECBEC2D0042FEA6 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41FB6CF21EC76C8500C9EC8C = {
 			isa = PBXGroup;
 			children = (
 				41FB6D161EC76D8100C9EC8C /* Source */,
 				41FB6D171EC76D9A00C9EC8C /* Tests */,
 				41FB6D3C1EC78D9100C9EC8C /* Demo */,
-				41FB6D211EC76FE700C9EC8C /* Frameworks */,
 				41FB6CFD1EC76C8500C9EC8C /* Products */,
+				419957D81ECBEC2D0042FEA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,8 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				41FB6CFC1EC76C8500C9EC8C /* BoxCast.framework */,
-				41FB6D051EC76C8500C9EC8C /* Tests.xctest */,
+				41FB6D051EC76C8500C9EC8C /* BoxCast Tests iOS.xctest */,
 				41FB6D3B1EC78D9100C9EC8C /* Demo.app */,
+				41EB195E1ECBE9AC00C5C72E /* BoxCast.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,14 +202,6 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		41FB6D211EC76FE700C9EC8C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				41FB6D221EC76FFA00C9EC8C /* Alamofire.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		41FB6D241EC7717D00C9EC8C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,10 +223,10 @@
 		41FB6D2E1EC77DBD00C9EC8C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				411FC1AD1ECB8ABD0034C4F3 /* Device.swift */,
 				41FB6D671EC8CD5900C9EC8C /* InfoPlist.swift */,
 				41FB6D2F1EC77DD700C9EC8C /* QueryBuilder.swift */,
 				41FB6D741ECA482C00C9EC8C /* System.swift */,
-				411FC1AD1ECB8ABD0034C4F3 /* UIKitExtensions.swift */,
 				41FB6D6F1EC9EF5900C9EC8C /* UserDefaults.swift */,
 			);
 			path = Helpers;
@@ -226,6 +249,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		41EB195B1ECBE9AC00C5C72E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EB19661ECBEA0D00C5C72E /* BoxCast.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FB6CF91EC76C8500C9EC8C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,9 +268,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		41FB6CFB1EC76C8500C9EC8C /* BoxCast */ = {
+		41EB195D1ECBE9AC00C5C72E /* BoxCast macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41FB6D101EC76C8500C9EC8C /* Build configuration list for PBXNativeTarget "BoxCast" */;
+			buildConfigurationList = 41EB19631ECBE9AC00C5C72E /* Build configuration list for PBXNativeTarget "BoxCast macOS" */;
+			buildPhases = (
+				41C5C8DB1ECBF0C100EFD295 /* Build Carthage Dependencies */,
+				41EB19591ECBE9AC00C5C72E /* Sources */,
+				41EB195A1ECBE9AC00C5C72E /* Frameworks */,
+				41EB195B1ECBE9AC00C5C72E /* Headers */,
+				41EB195C1ECBE9AC00C5C72E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BoxCast macOS";
+			productName = "BoxCast macOS";
+			productReference = 41EB195E1ECBE9AC00C5C72E /* BoxCast.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41FB6CFB1EC76C8500C9EC8C /* BoxCast iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41FB6D101EC76C8500C9EC8C /* Build configuration list for PBXNativeTarget "BoxCast iOS" */;
 			buildPhases = (
 				411FC1B01ECB94330034C4F3 /* Build Carthage Dependencies */,
 				41FB6CF71EC76C8500C9EC8C /* Sources */,
@@ -251,14 +301,14 @@
 			);
 			dependencies = (
 			);
-			name = BoxCast;
+			name = "BoxCast iOS";
 			productName = BoxCastSDK;
 			productReference = 41FB6CFC1EC76C8500C9EC8C /* BoxCast.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		41FB6D041EC76C8500C9EC8C /* Tests */ = {
+		41FB6D041EC76C8500C9EC8C /* BoxCast Tests iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41FB6D131EC76C8500C9EC8C /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = 41FB6D131EC76C8500C9EC8C /* Build configuration list for PBXNativeTarget "BoxCast Tests iOS" */;
 			buildPhases = (
 				41FB6D011EC76C8500C9EC8C /* Sources */,
 				41FB6D021EC76C8500C9EC8C /* Frameworks */,
@@ -270,9 +320,9 @@
 			dependencies = (
 				41FB6D081EC76C8500C9EC8C /* PBXTargetDependency */,
 			);
-			name = Tests;
+			name = "BoxCast Tests iOS";
 			productName = BoxCastSDKTests;
-			productReference = 41FB6D051EC76C8500C9EC8C /* Tests.xctest */;
+			productReference = 41FB6D051EC76C8500C9EC8C /* BoxCast Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		41FB6D3A1EC78D9100C9EC8C /* Demo */ = {
@@ -304,6 +354,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "BoxCast, Inc.";
 				TargetAttributes = {
+					41EB195D1ECBE9AC00C5C72E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4DR4Q6A8AY;
+						ProvisioningStyle = Automatic;
+					};
 					41FB6CFB1EC76C8500C9EC8C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 4DR4Q6A8AY;
@@ -336,14 +391,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41FB6CFB1EC76C8500C9EC8C /* BoxCast */,
-				41FB6D041EC76C8500C9EC8C /* Tests */,
+				41FB6CFB1EC76C8500C9EC8C /* BoxCast iOS */,
+				41FB6D041EC76C8500C9EC8C /* BoxCast Tests iOS */,
+				41EB195D1ECBE9AC00C5C72E /* BoxCast macOS */,
 				41FB6D3A1EC78D9100C9EC8C /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		41EB195C1ECBE9AC00C5C72E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FB6CFA1EC76C8500C9EC8C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,7 +446,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -x /usr/local/bin/carthage ]; then\necho \"Carthage is not installed. Install Carthage using Homebrew.\"\nexit 1\nfi\n\nif [ ! -d \"${SRCROOT}/Carthage/Checkouts\" ]; then\necho \"Checking out Carthage dependencies\"\nenv -i /usr/local/bin/carthage checkout\nfi\n\nif [ ! -d \"${SRCROOT}/Carthage/Build\" ]; then\necho \"Building Carthage dependencies\"\nenv -i PLATFORM_NAME=$PLATFORM_NAME /usr/local/bin/carthage build --platform $PLATFORM_NAME\nfi";
+			shellScript = "if [ ! -x /usr/local/bin/carthage ]; then\necho \"Carthage is not installed. Install Carthage using Homebrew.\"\nexit 1\nfi\n\nif [ ! -d \"${SRCROOT}/Carthage/Checkouts\" ]; then\necho \"Checking out Carthage dependencies\"\nenv -i /usr/local/bin/carthage checkout\nfi\n\nif [ ! -d \"${SRCROOT}/Carthage/Build\" ]; then\necho \"Building Carthage dependencies\"\nenv -i PLATFORM_NAME=$PLATFORM_NAME /usr/local/bin/carthage build\nfi";
+		};
+		41C5C8DB1ECBF0C100EFD295 /* Build Carthage Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Carthage Dependencies";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -x /usr/local/bin/carthage ]; then\necho \"Carthage is not installed. Install Carthage using Homebrew.\"\nexit 1\nfi\n\nif [ ! -d \"${SRCROOT}/Carthage/Checkouts\" ]; then\necho \"Checking out Carthage dependencies\"\nenv -i /usr/local/bin/carthage checkout\nfi\n\nif [ ! -d \"${SRCROOT}/Carthage/Build\" ]; then\necho \"Building Carthage dependencies\"\nenv -i PLATFORM_NAME=$PLATFORM_NAME /usr/local/bin/carthage build\nfi";
 		};
 		41FB6D341EC789A900C9EC8C /* Copy Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -418,6 +495,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		41EB19591ECBE9AC00C5C72E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EB196C1ECBEA2400C5C72E /* QueryBuilder.swift in Sources */,
+				41EB196D1ECBEA2400C5C72E /* System.swift in Sources */,
+				41EB19671ECBEA2400C5C72E /* BoxCastClient.swift in Sources */,
+				41EB19711ECBEA2400C5C72E /* BroadcastView.swift in Sources */,
+				41EB196B1ECBEA2400C5C72E /* InfoPlist.swift in Sources */,
+				41EB19691ECBEA2400C5C72E /* Errors.swift in Sources */,
+				41EB196F1ECBEA2400C5C72E /* UserDefaults.swift in Sources */,
+				41EB19681ECBEA2400C5C72E /* BoxCastPlayer.swift in Sources */,
+				41EB196E1ECBEA2400C5C72E /* Device.swift in Sources */,
+				41EB196A1ECBEA2400C5C72E /* Metrics.swift in Sources */,
+				41EB19701ECBEA2400C5C72E /* Broadcast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41FB6CF71EC76C8500C9EC8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,7 +526,7 @@
 				41FB6D711EC9F01200C9EC8C /* UserDefaults.swift in Sources */,
 				41FB6D661EC8C5D800C9EC8C /* Metrics.swift in Sources */,
 				41FB6D2A1EC7720300C9EC8C /* BoxCastClient.swift in Sources */,
-				411FC1AF1ECB8AF90034C4F3 /* UIKitExtensions.swift in Sources */,
+				411FC1AF1ECB8AF90034C4F3 /* Device.swift in Sources */,
 				41FB6D2D1EC775B800C9EC8C /* Broadcast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +558,7 @@
 /* Begin PBXTargetDependency section */
 		41FB6D081EC76C8500C9EC8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 41FB6CFB1EC76C8500C9EC8C /* BoxCast */;
+			target = 41FB6CFB1EC76C8500C9EC8C /* BoxCast iOS */;
 			targetProxy = 41FB6D071EC76C8500C9EC8C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -488,6 +583,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		41EB19641ECBE9AC00C5C72E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boxcast.boxcast-sdk";
+				PRODUCT_NAME = BoxCast;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		41EB19651ECBE9AC00C5C72E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boxcast.boxcast-sdk";
+				PRODUCT_NAME = BoxCast;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		41FB6D0E1EC76C8500C9EC8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -596,7 +741,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4DR4Q6A8AY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -609,7 +753,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.boxcast.boxcast-sdk";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BoxCast;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -623,7 +767,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4DR4Q6A8AY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -636,7 +779,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.boxcast.boxcast-sdk";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BoxCast;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -710,6 +853,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		41EB19631ECBE9AC00C5C72E /* Build configuration list for PBXNativeTarget "BoxCast macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EB19641ECBE9AC00C5C72E /* Debug */,
+				41EB19651ECBE9AC00C5C72E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41FB6CF61EC76C8500C9EC8C /* Build configuration list for PBXProject "BoxCast" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -719,7 +871,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41FB6D101EC76C8500C9EC8C /* Build configuration list for PBXNativeTarget "BoxCast" */ = {
+		41FB6D101EC76C8500C9EC8C /* Build configuration list for PBXNativeTarget "BoxCast iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41FB6D111EC76C8500C9EC8C /* Debug */,
@@ -728,7 +880,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41FB6D131EC76C8500C9EC8C /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		41FB6D131EC76C8500C9EC8C /* Build configuration list for PBXNativeTarget "BoxCast Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41FB6D141EC76C8500C9EC8C /* Debug */,

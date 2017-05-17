@@ -60,7 +60,7 @@ extension Metric.Action: JSONDeserializable {
             params["browser_name"] = System.osName
             params["os"] = System.osName
             params["browser_version"] = System.osVersion
-            params["model"] = UIDevice.current.modelIdentifierString
+            params["model"] = Device.modelIdentifierString
             params["product_type"] = ""
             params["system_version"] = System.osVersion
             params["vendor_identifier"] = ""

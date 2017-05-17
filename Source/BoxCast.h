@@ -6,7 +6,7 @@
 //  Copyright © 2017 BoxCast, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for BoxCast.
 FOUNDATION_EXPORT double BoxCastVersionNumber;
