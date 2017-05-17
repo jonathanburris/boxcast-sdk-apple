@@ -299,6 +299,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41C5C8FE1ECC7EF500EFD295 /* Build configuration list for PBXNativeTarget "BoxCast macOS" */;
 			buildPhases = (
+				41C5C9271ECC9F5500EFD295 /* Build Carthage Dependencies */,
 				41C5C8F41ECC7EF500EFD295 /* Sources */,
 				41C5C8F51ECC7EF500EFD295 /* Frameworks */,
 				41C5C8F61ECC7EF500EFD295 /* Headers */,
@@ -520,6 +521,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		41C5C9271ECC9F5500EFD295 /* Build Carthage Dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Carthage Dependencies";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -x /usr/local/bin/carthage ]; then\necho \"Carthage is not installed. Install Carthage using Homebrew.\"\nexit 1\nfi\n\nif [ ! -d \"${SRCROOT}/Carthage/Checkouts\" ]; then\necho \"Checking out Carthage dependencies\"\nenv -i /usr/local/bin/carthage checkout\nfi\n\nif [ ! -d \"${SRCROOT}/Carthage/Build\" ]; then\necho \"Building Carthage dependencies\"\nenv -i PLATFORM_NAME=$PLATFORM_NAME /usr/local/bin/carthage build\nfi";
 		};
 		41FB6D341EC789A900C9EC8C /* Copy Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -976,6 +991,7 @@
 				41C5C9001ECC7EF500EFD295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41C5C91A1ECC7F8C00EFD295 /* Build configuration list for PBXNativeTarget "BoxCast macOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -984,6 +1000,7 @@
 				41C5C91C1ECC7F8C00EFD295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41FB6CF61EC76C8500C9EC8C /* Build configuration list for PBXProject "BoxCast" */ = {
 			isa = XCConfigurationList;
