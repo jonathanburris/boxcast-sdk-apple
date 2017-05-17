@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Source/**/*.swift'
 
   s.ios.deployment_target  = '9.0'
+  s.osx.deployment_target  = '10.12'
 
   s.dependency 'Alamofire', '~> 4.4'
 end
