@@ -4,10 +4,10 @@ The official BoxCast SDK for integrating with the BoxCast API on Apple platforms
 
 ## Features
 
-- [x] List Live and Archived Broadcasts
-- [x] Detail A Broadcast
-- [x] Play Live and Archived Broadcasts
-- [x] Documentation
+- List Live and Archived Broadcasts
+- Detail A Broadcast
+- Watch Broadcasts
+- Documentation
 
 ## Requirements
 
@@ -79,6 +79,81 @@ $ pod install
 
 ## Usage
 
+Before you get started make sure to grab the id of the channel you want to get broadcasts from. This can be found on your [BoxCast Broadcaster Dashboard](https://dashboard.boxcast.com/#/channels).
+
+### Accessing Resources
+
+#### Get Live Broadcasts
+
+```swift
+import BoxCast
+
+BoxCastClient.shared.getLiveBroadcasts(channelId: "YOUR_CHANNEL_ID") { broadcasts, error in
+    if let broadcasts = broadcasts {
+        // Do something special with the live broadcasts.
+    } else {
+        // Handle the error.
+    }
+}
+```
+
+#### Get Archived Broadcasts
+
+```swift
+import BoxCast
+
+BoxCastClient.shared.getArchivedBroadcasts(channelId: "YOUR_CHANNEL_ID") { broadcasts, error in
+    if let broadcasts = broadcasts {
+        // Do something special with the archived broadcasts.
+    } else {
+        // Handle the error.
+    }
+}
+```
+
+#### Get Broadcast
+
+```swift
+import BoxCast
+
+BoxCastClient.shared.getBroadcast(broadcastId: "BROADCAST_ID") { broadcast, error in
+    if let broadcast = broadcast {
+        // Do something special with the broadcast.
+    } else {
+        // Handle the error.
+    }
+}
+```
+
+#### Get Broadcast View
+
+```swift
+BoxCastClient.shared.getBroadcastView(broadcastId: "BROADCAST_ID") { broadcastView, error in
+    if let broadcastView = broadcastView {
+        // Do something special with the broadcast view.
+    } else {
+        // Handle error.
+    }
+}
+```
+
+### Playback
+
+After getting a detailed broadcast and broadcast view you can use the two resources to create an `BoxCastPlayer` object. This object is a simple sublcass of `AVPlayer` and can be used in a similar fashion.
+
+Below is an example of creating the player and then presenting a `AVPlayerViewController` instance with the player.
+
+```swift
+import BoxCast
+
+let player = BoxCastPlayer(broadcast: broadcast, broadcastView: broadcastView)
+let controller = AVPlayerViewController()
+controller.player = player
+present(controller, animated: true) {
+    player?.play()
+}
+```
+
 ## Demo
 
 There is a demo app included with this project to help you get a feel for how this SDK can be used. Just open up the `BoxCast.xcodeproj` select the `Demo` scheme and run it.
@@ -86,6 +161,8 @@ There is a demo app included with this project to help you get a feel for how th
 > Carthage must be installed on your machine or the project won't build.
 
 ## Documentation
+
+Documentation can be found [here]().
 
 ## License
 
