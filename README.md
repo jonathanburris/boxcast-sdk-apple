@@ -11,7 +11,7 @@ The official BoxCast SDK for integrating with the BoxCast API on Apple platforms
 
 ## Requirements
 
-- iOS 9.0+
+- iOS 9.0+ | macOS 10.12+
 - Xcode 8.2+
 - Swift 3.0+
 
