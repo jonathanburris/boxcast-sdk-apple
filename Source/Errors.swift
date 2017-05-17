@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// Errors that occured accessing BoxCast API resources.
 public enum BoxCastError: Error {
+    /// The resource was unable to be serialized.
     case serializationError
 }

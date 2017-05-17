@@ -8,6 +8,8 @@
 
 import AVFoundation
 
+/// The player to be used for playback of a BoxCast broadcast. This class is a simple subclass of
+/// `AVPlayer` and can be used in exactly the same manner.
 public class BoxCastPlayer : AVPlayer {
     
     let metricsConsumer: MetricsConsumer
@@ -16,8 +18,15 @@ public class BoxCastPlayer : AVPlayer {
     var lastPlayTime: CMTime?
     var intervalTimer: RepeatingTimer?
     
-    // MARK: - Lifecycle
+    // MARK: - Initializing a Player Object
     
+    /// Initializes and returns a newly allocated player object. Important to note that this is a
+    /// failable initializer and should be handled appropriately.
+    /// 
+    /// - Parameters:
+    ///   - broadcast: The broadcast for playback. This must be a detailed broadcast or the 
+    ///                initializer will fail.
+    ///   - broadcastView: The broadcast view for the broadcast.
     public init?(broadcast: Broadcast, broadcastView: BroadcastView) {
         if let url = broadcastView.playlistURL {
             let item = AVPlayerItem(url: url)

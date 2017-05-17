@@ -9,15 +9,24 @@
 import Foundation
 import Alamofire
 
-public typealias BroadcastList = [Broadcast]
-
+/// The struct that represents a BoxCast broadcast.
 public struct Broadcast {
     
+    /// The unique identifier for the broadcast.
     public let id: String
+    
+    /// The name of the broadcast.
     public let name: String
+    
+    /// The description of the broadcast.
     public let description: String
+    
+    /// The image URL for the thumbnail of the broadcast.
     public let thumbnailURL: URL
+    
+    /// The channel's unique identifier that includes this broadcast.
     public let channelId: String
+    
     let accountId: String?
     
     init(id: String, name: String, description: String, thumbnailURL: URL, channelId: String,
@@ -53,6 +62,8 @@ public struct Broadcast {
     }
     
 }
+
+public typealias BroadcastList = [Broadcast]
 
 extension Array where Element == Broadcast {
     init(channelId: String, json: Any) throws {

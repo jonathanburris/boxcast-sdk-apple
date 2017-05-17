@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// The struct that represents a view of the BoxCast broadcast.
 public struct BroadcastView {
     
     enum Status {

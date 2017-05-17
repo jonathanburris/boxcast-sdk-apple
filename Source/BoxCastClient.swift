@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 
+/// The client for the BoxCast API. Use the client to access resources of the BoxCast ecosystem.
 public class BoxCastClient {
     
     let apiURL = "https://api.boxcast.com"
@@ -19,8 +20,9 @@ public class BoxCastClient {
         case past = "past"
     }
     
-    // MARK: - Lifecycle
+    // MARK: - Shared Instance
     
+    /// The shared singleton object to be used for accessing resources.
     public static let shared = BoxCastClient()
     
     internal init() {
@@ -31,20 +33,33 @@ public class BoxCastClient {
         self.manager = manager
     }
     
-    // MARK: - Public
+    // MARK: - Accessing Resources
     
-    public func getLiveBroadcasts(channelId: String,
-                                  completion: @escaping ((BroadcastList?, Error?) -> Void)) {
-        findBroadcasts(channelId: channelId, timeframe: .live, completion: completion)
+    /// Returns a list of live broadcasts for a specific channel.
+    ///
+    /// - Parameters:
+    ///   - channelId: The channel id.
+    ///   - completionHandler: The handler to be called upon completion.
+    public func getLiveBroadcasts(channelId: String, completionHandler: @escaping ((BroadcastList?, Error?) -> Void)) {
+        findBroadcasts(channelId: channelId, timeframe: .live, completionHandler: completionHandler)
     }
     
-    public func getArchivedBroadcasts(channelId: String,
-                                      completion: @escaping ((BroadcastList?, Error?) -> Void)) {
-        findBroadcasts(channelId: channelId, timeframe: .past, completion: completion)
+    /// Returns a list of archived broadcasts for a specific channel.
+    ///
+    /// - Parameters:
+    ///   - channelId: The channel id.
+    ///   - completionHandler: The handler to be called upon completion.
+    public func getArchivedBroadcasts(channelId: String, completionHandler: @escaping ((BroadcastList?, Error?) -> Void)) {
+        findBroadcasts(channelId: channelId, timeframe: .past, completionHandler: completionHandler)
     }
     
-    public func getBroadcast(broadcastId: String, channelId: String,
-                             completion: @escaping ((Broadcast?, Error?) -> Void)) {
+    /// Returns a detailed broadcast.
+    ///
+    /// - Parameters:
+    ///   - broadcastId: The broadcast id.
+    ///   - channelId: The channel id.
+    ///   - completionHandler: The handler to be called upon completion.
+    public func getBroadcast(broadcastId: String, channelId: String, completionHandler: @escaping ((Broadcast?, Error?) -> Void)) {
         let request = manager.request("\(apiURL)/broadcasts/\(broadcastId)")
         request
             .validate(statusCode: 200..<300)
@@ -52,12 +67,16 @@ public class BoxCastClient {
                 let result = response.flatMap { json in
                     return try Broadcast(channelId: channelId, json: json)
                 }
-                completion(result.value, result.error)
+                completionHandler(result.value, result.error)
         }
     }
     
-    public func getBroadcastView(broadcastId: String,
-                                 completion: @escaping ((BroadcastView?, Error?) -> Void)) {
+    /// Returns a view for a specific broadcast.
+    ///
+    /// - Parameters:
+    ///   - broadcastId: The broadcast id.
+    ///   - completionHandler: The handler to be called upon completion.
+    public func getBroadcastView(broadcastId: String, completionHandler: @escaping ((BroadcastView?, Error?) -> Void)) {
         let request = manager.request("\(apiURL)/broadcasts/\(broadcastId)/view")
         request
             .validate(statusCode: 200..<300)
@@ -65,14 +84,14 @@ public class BoxCastClient {
                 let result = response.flatMap { json in
                     return try BroadcastView(json: json)
                 }
-                completion(result.value, result.error)
+                completionHandler(result.value, result.error)
         }
     }
     
     // MARK: - Private
     
     private func findBroadcasts(channelId: String, timeframe: Timeframe,
-                                completion: @escaping (([Broadcast]?, Error?) -> Void)) {
+                                completionHandler: @escaping (([Broadcast]?, Error?) -> Void)) {
         // Build the query.
         let query = QueryBuilder()
         query.appendWithLogic(.or, key: "timeframe", value: timeframe.rawValue)
@@ -87,7 +106,7 @@ public class BoxCastClient {
                 let result = response.flatMap { json in
                     return try BroadcastList(channelId: channelId, json: json)
                 }
-                completion(result.value, result.error)
+                completionHandler(result.value, result.error)
         }
         
     }
