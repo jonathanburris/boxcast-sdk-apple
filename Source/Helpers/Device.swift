@@ -6,6 +6,7 @@
 //  Copyright © 2017 BoxCast, Inc. All rights reserved.
 //
 
+import Foundation
 #if os(iOS)
 import UIKit
 #endif
@@ -23,9 +24,14 @@ class Device {
                 return identifier + String(UnicodeScalar(UInt8(value)))
             }
             return identifier
+        #elseif os(macOS)
+            var size: Int = 0
+            sysctlbyname("hw.model", nil, &size, nil, 0)
+            var model: [CChar] = Array(repeating: CChar(), count: size)
+            sysctlbyname("hw.model", &model, &size, nil, 0)
+            return String(cString: model)
         #else
-            // TODO: Return model for macOS.
-            return ""
+            return "Unknown"
         #endif
     }
     

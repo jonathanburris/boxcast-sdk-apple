@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "41EB195D1ECBE9AC00C5C72E"
+               BlueprintIdentifier = "41C5C8F81ECC7EF500EFD295"
                BuildableName = "BoxCast.framework"
                BlueprintName = "BoxCast macOS"
                ReferencedContainer = "container:BoxCast.xcodeproj">
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "41C5C9111ECC7F8C00EFD295"
+               BuildableName = "BoxCast macOS Tests.xctest"
+               BlueprintName = "BoxCast macOS Tests"
+               ReferencedContainer = "container:BoxCast.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "41C5C8F81ECC7EF500EFD295"
+            BuildableName = "BoxCast.framework"
+            BlueprintName = "BoxCast macOS"
+            ReferencedContainer = "container:BoxCast.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41EB195D1ECBE9AC00C5C72E"
+            BlueprintIdentifier = "41C5C8F81ECC7EF500EFD295"
             BuildableName = "BoxCast.framework"
             BlueprintName = "BoxCast macOS"
             ReferencedContainer = "container:BoxCast.xcodeproj">
@@ -63,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41EB195D1ECBE9AC00C5C72E"
+            BlueprintIdentifier = "41C5C8F81ECC7EF500EFD295"
             BuildableName = "BoxCast.framework"
             BlueprintName = "BoxCast macOS"
             ReferencedContainer = "container:BoxCast.xcodeproj">
