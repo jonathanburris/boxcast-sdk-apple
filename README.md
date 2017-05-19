@@ -35,7 +35,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'boxcast-sdk-apple', '~> 0.1'
+    pod 'boxcast-sdk-apple', '~> 0.2'
 end
 ```
 
@@ -59,7 +59,7 @@ $ pod install
 2. Edit your `Cartfile` to integrate BoxCast into your Xcode project:
 
 	```ogdl
-	github "boxcast/boxcast-sdk-apple" ~> 0.1
+	github "boxcast/boxcast-sdk-apple" ~> 0.2
 	```
 
 3. Run `carthage update`. This will fetch BoxCast into a `Carthage/Checkouts` folder and build the framework.
