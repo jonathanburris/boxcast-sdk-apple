@@ -35,7 +35,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'boxcast-sdk-apple', '~> 0.2'
+    pod 'BoxCast', '~> 0.2'
 end
 ```
 
